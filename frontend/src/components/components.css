@@ -1,0 +1,694 @@
+.navbar{
+    height: 50px;
+
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+}
+.navContainer{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-weight: 500;
+}
+.navButton{
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #003580;
+}
+
+.header{
+    background-color: #003580;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+
+}
+.headerList{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.headerListItem.active{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.headerDescription{
+    margin: 20px 0px;
+}
+.headerBtn{
+    background-color: #0071c2;
+    border: 1px solid black;
+    color: white;
+    border: none;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+.headerIcon{
+    color: lightgray;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.headerSearchInput{
+    border: none;
+    outline: none;
+}
+.headerSearchText{
+    color: lightgray;
+    cursor: pointer;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.options{
+    position: absolute;
+    top :50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -web-box-shadow:0px 0px 10px -5px black;
+    box-shadow: 0px 0px 10px -5px black;
+    z-index: 2;
+
+}
+.optionItem{
+    width:200px ;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    color: black;
+}
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+}
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
+
+.homeContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.featured{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+    z-index: 1;
+}
+.featuredImg{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+.featuredItem{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+}
+.featuredTitles{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.homeTitle{
+    font-size:20px
+}
+
+.pList{
+    width: 100%;
+    max-width: 1024px;
+
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+}
+
+.pListItem{
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pListImg{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.pListTitles>h1{
+    font-size: 18px;
+    color: #555;
+    text-transform: capitalize;
+}
+.pListTitles>h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.fp{
+    width: 100%;
+    max-width: 1024px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+}
+.fText{
+    width: 100%;
+    max-width: 1024px;
+    
+}
+.fpItem{
+    flex:1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.fpImg{
+    width: 100%;
+}
+.fpImg{
+    font: bold;
+}
+.fpCity{
+    font-weight: 300;
+}
+.fpPrice{
+    font-weight: 500;
+}
+.fpRating>button{
+    background-color: #003580;
+    color: wheat;
+    border: none;
+    padding: 3px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.fpRating>span{
+    font-size: 14px;
+}
+
+.mail{
+    width: 93%;
+    margin-top: 50px;
+    background-color: #003580;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    padding: 50px;
+}
+.mailInputContainer>input{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.mailInputContainer>button{
+    height: 50px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.footer{
+    width: 100%;
+
+    font-size: 11px;
+}
+.fLists{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.fList{
+    list-style: none;
+    padding: 0;
+}
+.fListItem{
+    margin-bottom: 10px;
+    color: #003580;
+    cursor: pointer ;
+}
+
+.listContainer{
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 19px;
+}
+.listWrapper{
+    width: 100%;
+    display: flex;
+    gap: 19px;
+}
+.listSearch{
+    flex: 1;
+    background-color: #febb02;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+}
+.lsTitle{
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.listResult{
+    flex: 3;
+}
+.lsItem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.lsItem>label{
+    font-size: 11px;
+}
+.lsItem>input{
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+.lsItem>span{
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.lsOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 13px;
+}
+.lsOptionInput{
+    width: 50px;
+}
+.lsOptions{
+    padding: 10px;
+}
+.listSearch>button{
+    padding: 10px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.searchItem{
+    border: 1px solid lightgray;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+.siImg{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.siDesc{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex: 2;
+}
+.siTitle{
+    font-size: 20px;
+    color: #0071c2;
+}
+.siDetails{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.siDistance{
+    font-size: 11px;
+}
+.siTaxiOp{
+    font-size: 11px;
+    background-color: #008009;
+    color: white;
+    width: max-content;
+    padding: 3px;
+    border-radius: 5px;
+}
+.siSubtitle{
+    font-size: 11px;
+    font-weight: bold;
+}
+.siFeatures{
+    font-size: 11px;
+}
+.siCancelOp{
+    font-size: 11px;
+    color: #008009;
+    font-weight: bold;
+}
+.siCancelOpSubtitle{
+    font-size: 11px;
+    color: #008009;
+}
+.siRating{
+    display: flex;
+    justify-content: space-between;
+}
+.siRating>span{
+    font-weight: 500;
+}
+.siRating>button{
+    background-color: #003580;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+}
+.siDetailsTexts{
+    text-align: right;
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+.siPrice{
+    font-size: 24px;
+    color: gray;
+}
+.siCheckButton{
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hotelContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.hotelWrapper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.hotelImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotelImgWrapper{
+    width: 23%;
+}
+.hotelImg{
+    width: 100%;
+    object-fit: cover;
+}
+.hotelTitle{
+    font-size: 24px;
+}
+.hotelAddress{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hotelDistance{
+    color: #0071c2;
+    font-weight: 500;
+}
+.hotelPriceHighLight{
+    color: #008009;
+    font-weight: 500;
+}
+.bookNow{
+     position: absolute;
+     top: 10px;
+     right: 0;
+     border: none;
+     padding: 10px 20px;
+     background-color: #0071c2;
+     color: white;
+     font-weight: bold;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.hotelDetails{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+.hotelDetailsTexts{
+    flex:3 ;
+}
+.hotelDesc{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.hotelDetailsPrice{
+    flex: 1;
+    background-color: #ebf3ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hotelDetailsPrice>h1{
+    font-size: 18px;
+    color: #555;
+}
+.hotelDetailsPrice>span{
+font-size: 14px;
+}
+.hotelDetailsPrice>h2{
+    font-weight: 300;
+}
+.hotelDetailsPrice>button{
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.reserve{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rContainer{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+.rClose{
+    position: absolute;
+}
+.rItem{
+    display: flex;
+    align-items: center;
+    gap:50px;
+    padding:0 20px;
+}
+.btn-dark{
+    background-color: #0071c2;
+    width: 95px;
+    border-radius: 25px;
+    height: 46px;
+    padding: 10px;
+    color: white;
+    border: none;
+    margin: 12px;
+
+}
+.btn-dark:hover{
+    background-color: #1285d7;
+    width: 95px;
+    border-radius: 25px;
+    height: 46px;
+    padding: 10px;
+    color: rgb(240, 233, 233);
+    cursor: pointer;
+}
+
+.fa-circle-xmark{
+    margin: -15px;
+}
+.fa-circle-xmark:hover{
+    cursor: pointer;
+}
+
+.rPrice{
+    font-weight: 500;
+}
+.rMax{
+    font-size: 12px;
+}
+.rInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.rTitle{
+    font-weight: 500;
+}
+.rDesc{
+    font-weight: 300;
+}
+.roomWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnRoom{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.mx{
+    margin: 5px ;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .lInput{
+    height: 30px;
+    padding: 10px;
+  }
+  
+  .lButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+  }
